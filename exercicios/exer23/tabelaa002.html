@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+           
+        }
+        thead, tfoot{
+            background-color: #383838;
+            color: white;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .num{
+            text-align: right;
+        }
+        .title{
+            background-color: gray;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgrey;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> uso de tabelas</h1>
+    <table>
+       <caption>
+        populaçao dos estados
+
+       </caption>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São paulo</td>
+                <td>45 919 049</td>
+            </tr>
+        	    <tr>
+                    <td>São Paulo	</td>
+                    <td>44 420 459	</tr>
+        	    <tr>
+                    <td>Minas Gerais	</td>
+                    <td>20 538 718	</tr></td>
+        	    <tr>
+                    <td>Rio de Janeiro	</td>
+                    <td>16 054 524	</tr></td>
+        	     <tr>
+                    <td>Bahia Bahia	</td>
+                    <td>14 136 417	</tr></td>
+        	    <tr>
+                    <td>Paraná	</td>
+                    <td>11 443 208	</tr></td>
+        	    <tr>
+                    <td>Rio Grande do Sul	</td>
+                    <td>10 880 506	</tr></td>
+        	     <tr>
+                    <td>Pernambuco</td>
+                    	<td>9 058 155	</tr></td>
+        	     <tr>
+                    <td>Ceará	</td>
+                    <td>8 791 688	8</tr></td>
+        	    <tr>
+                    <td>Pará Pará	</td>
+                    <td>8 116 132	</tr></td>
+            	 <tr>
+                    <td>Santa Catarina</td>
+                    	<td>7 609 601	</tr></td>
+            	 <tr>
+                    <td>Goiás	</td>
+                    <td>7 055 228	</tr></td>
+            	 <tr>
+                    <td>Maranhão	</td>
+                    <td>6 775 152	</tr></td>
+            	 <tr>
+                    <td>Paraíba	</td>
+                    <td>3 974 495	</tr></td>
+            	 <tr>
+                    <td>Amazonas	</td>
+                    <td>3 941 175	</tr></td>
+            	 <tr>
+                    <td>Espírito Santo	</td>
+                    <td>3 833 486	</td>
+                
+                </tr>
+            	 <tr>
+                    <td> Mato Grosso	
+                        <td> 3 658 813	
+                </tr>
+            	 <tr>
+                    <td> Rio Grande do Norte	
+                    <td>3 302 406	</td>
+                </tr>
+            	 <tr>
+                    <td>Piauí	</td>
+                    <td>3 269 200</td>
+                </tr>
+            	 <tr>
+                    <td>Alagoas</td>
+                    	<td>3 127 511</td>
+                    </tr>
+            	 <tr>
+                  <td>  Distrito Federal	
+                    <td> 2 817 068	
+                </tr>
+            	 <tr>
+                    <td> Mato Grosso do Sul	
+                        <td>2 756 700	
+                </tr>
+            	 <tr>
+                    <td> Sergipe	
+                        <td> 2 209 558	</tr>
+            	 <tr>
+                    <td>Rondônia	
+                        <td>1 581 016	
+                </tr>
+            	 <tr>
+                    <td> Tocantins	
+                        <td> 1 511 459	
+                </tr>
+            	 <tr>
+                    <td> Acre	
+                    
+                        <td> 830 026	
+                </tr>
+            	 <tr>
+                    <td>  Amapá	
+                        <td> 733 508
+                </tr>
+            	 <tr>
+                    <td> Roraima	
+                        <td> 636 303	
+                </tr>
+            
+
+        </tbody>
+        <tfoot>
+             <tr>
+                <th scope="row">Total de habitantes</th>
+                <Td> 214 000 000
+
+                </Td>
+             </tr>
+        </tfoot>
+    </table>
+    <script>
+        var todasastds = document.querySelectorAll('td')
+
+        todasastds.forEach(function(td) {
+        td.classList.add('num');
+        });
+        
+        
+       var todasth = document.querySelectorAll('th')
+      
+       todasth.forEach(function(th){
+       th.classList.add('title');
+       }) ;
+
+
+    </script>
+</body>
+</html>
